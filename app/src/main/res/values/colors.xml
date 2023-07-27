@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#222222</color>
+    <color name="black_2">#808080</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#5700C7</color>
+    <color name="lavender">#A863FF</color>
+    <color name="home_gradual_color_bg_start">#00FFFFFF</color>
+    <color name="home_gradual_color_bg_end">#E2E2E2</color>
+</resources>
