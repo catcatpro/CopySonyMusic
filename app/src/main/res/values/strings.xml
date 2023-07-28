@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">CopySonyMusic</string>
     <string name="home_title">音乐</string>
-    <string name="play_list">播放队列</string>
+    <string name="play_queue">播放队列</string>
     <string name="open">打开</string>
+    <string name="play_list">播放列表</string>
+    <string name="artist">艺术家</string>
+    <string name="album">专辑</string>
+    <string name="song">曲目</string>
+    <string name="school">流派</string>
+    <string name="folder">文件夹</string>
+    <string name="settings">设置</string>
 </resources>

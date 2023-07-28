@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.CopySonyMusic" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+    <style name="Theme.CopySonyMusic" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="Theme.Home" parent="Theme.CopySonyMusic" >
         <item name="android:statusBarColor">@android:color/transparent</item>
-x    </style>
+    </style>
 </resources>

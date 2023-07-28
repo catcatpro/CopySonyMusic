@@ -1,19 +1,27 @@
 package com.catcatpro.copysonymusic.ui
 
 import android.app.Activity
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
+import android.os.DropBoxManager
+import android.util.Log
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.livedata.core.ktx.R
 import com.catcatpro.copysonymusic.databinding.ActivityMainBinding
 
 class MainActivity :AppCompatActivity(){
     lateinit var binding: ActivityMainBinding
+    lateinit var drawerLayout: DrawerLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-       setContentView(binding.root)
+        setContentView(binding.root)
         if (supportActionBar == null)
             setSupportActionBar(binding.toolbar)
         else
@@ -22,13 +30,29 @@ class MainActivity :AppCompatActivity(){
             it.setDisplayHomeAsUpEnabled(true)
             //侧边菜单icon
             it.setHomeAsUpIndicator(com.catcatpro.copysonymusic.R.drawable.ic_menu)
+            //隐藏标题
             it.setDisplayShowTitleEnabled(false)
         }
 
+        //侧边栏布局
+        drawerLayout = binding.drawerLayout
+        //侧边栏菜单
+        val navMenu = binding.navMenu
+        navMenu.itemIconTintList = null
+        navMenu.setCheckedItem(com.catcatpro.copysonymusic.R.id.nav_menu_home)
+        navMenu.itemTextColor
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(com.catcatpro.copysonymusic.R.menu.main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        Log.d("okkk","okk")
+        when(item.itemId){
+            android.R.id.home -> drawerLayout.openDrawer(GravityCompat.START)
+        }
         return true
     }
 }

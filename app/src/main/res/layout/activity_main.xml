@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        android:id="@+id/drawerLayout">
+        android:id="@+id/drawerLayout"
+        >
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,7 +38,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:id="@+id/fruitImageView"
-                            android:scaleType="centerCrop"
+                            android:scaleType="fitXY"
                             android:src="@drawable/ic_home_header_bg"
                             android:fitsSystemWindows="true"></ImageView>
                         <androidx.appcompat.widget.Toolbar
@@ -70,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginLeft="14dp"
-                        android:text="@string/play_list"
+                        android:text="@string/play_queue"
                         android:textColor="@color/white"
                         android:textFontWeight="@integer/material_motion_duration_medium_2"
                         android:textSize="20sp" />
@@ -88,14 +89,23 @@
                 </LinearLayout>
             </LinearLayout>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-        <TextView
-            android:layout_width="match_parent"
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="#FFF"-->
+<!--            android:text="This is menu"-->
+<!--            android:fitsSystemWindows="true"-->
+<!--            android:textSize="30sp" />-->
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="280dp"
             android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:background="#FFF"
-            android:text="This is menu"
-            android:fitsSystemWindows="true"
-            android:textSize="30sp" />
+            android:background="@color/menu_nav_bg"
+            app:menu="@menu/nav_menu"
+            android:id="@+id/navMenu"
+            app:itemIconSize="24dp"
+            app:itemTextColor="@color/black"
+            android:layout_gravity="start"></com.google.android.material.navigation.NavigationView>
     </androidx.drawerlayout.widget.DrawerLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

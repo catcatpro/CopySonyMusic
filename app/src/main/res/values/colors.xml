@@ -7,4 +7,5 @@
     <color name="lavender">#A863FF</color>
     <color name="home_gradual_color_bg_start">#00FFFFFF</color>
     <color name="home_gradual_color_bg_end">#E2E2E2</color>
+    <color name="menu_nav_bg">#E2FFFFFF</color>
 </resources>
