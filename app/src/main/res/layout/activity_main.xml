@@ -25,27 +25,30 @@
                 android:fitsSystemWindows="true">
                 <!--        标题栏-->
                 <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appBarLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fitsSystemWindows="true">
+
                     <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsingToolBar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                        android:id="@+id/collapsingToolBar"
-                        android:fitsSystemWindows="true">
+                        android:fitsSystemWindows="true"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
                         <ImageView
+                            android:id="@+id/fruitImageView"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/fruitImageView"
+                            android:fitsSystemWindows="true"
                             android:scaleType="fitXY"
-                            android:src="@drawable/ic_home_header_bg"
-                            android:fitsSystemWindows="true"></ImageView>
+                            android:src="@drawable/ic_home_header_bg" />
+
                         <androidx.appcompat.widget.Toolbar
                             android:id="@+id/toolbar"
                             android:layout_width="match_parent"
-                            android:layout_height="?attr/actionBarSize"
-                            />
+                            android:layout_height="?attr/actionBarSize" />
 
 
                     </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -55,38 +58,52 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/home_gradual_color_bg">
+                android:background="@drawable/home_gradual_color_bg"
+                android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/open_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="206dp"
                     android:gravity="center"
-                    >
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_weight="1"
-                        android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginLeft="14dp"
+                        android:layout_weight="1"
                         android:text="@string/play_queue"
                         android:textColor="@color/white"
                         android:textFontWeight="@integer/material_motion_duration_medium_2"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <Button
-                        android:textSize="14sp"
                         android:id="@+id/openBtn"
-                        android:layout_marginEnd="14dp"
                         android:layout_width="60dp"
                         android:layout_height="28dp"
+                        android:layout_marginEnd="14dp"
                         android:background="@drawable/button_bg"
                         android:text="@string/open"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="18dp">
+
+                    <include
+                        android:id="@+id/home_play_queue"
+                        layout="@layout/home_play_queue" />
+                </RelativeLayout>
             </LinearLayout>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 <!--        <TextView-->
@@ -105,7 +122,9 @@
             android:id="@+id/navMenu"
             app:itemIconSize="24dp"
             app:itemTextColor="@color/black"
-            android:layout_gravity="start"></com.google.android.material.navigation.NavigationView>
+            android:layout_gravity="start" />
     </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
