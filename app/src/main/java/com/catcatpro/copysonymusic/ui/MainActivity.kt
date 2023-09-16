@@ -54,6 +54,7 @@ class MainActivity :AppCompatActivity(){
             Music("夢灯籠", com.catcatpro.copysonymusic.R.drawable.test_music_1, "RADWIMPS","君の名は"),
             Music("三葉の通学", com.catcatpro.copysonymusic.R.drawable.test_music_1, "RADWIMPS","君の名は"),
             Music("糸守高校", com.catcatpro.copysonymusic.R.drawable.test_music_1, "RADWIMPS","君の名は"),
+            Music("はじめての、東京", com.catcatpro.copysonymusic.R.drawable.test_music_1, "RADWIMPS","君の名は"),
         )
 
         val adapter = HomePlayQueueAdapter(playQueueData)
