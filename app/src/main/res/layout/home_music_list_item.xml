@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="112dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:elevation="@dimen/cardview_compat_inset_shadow"
    >
     <ImageView
         android:id="@+id/musicImg"
@@ -14,22 +16,25 @@
         android:paddingLeft="7dp"
         android:paddingTop="5dp"
         android:paddingBottom="6.64dp"
-        android:background="@color/white"
         android:orientation="vertical"
+        android:background="?android:colorBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:textSize="13sp"
             android:id="@+id/music_title"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
             />
         <TextView
+            android:textSize="11sp"
             android:id="@+id/artist"
             android:layout_marginTop="3.13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/music_album_color"/>
+            android:ellipsize="end" />
     </LinearLayout>
 </LinearLayout>
