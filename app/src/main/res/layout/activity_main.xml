@@ -117,11 +117,10 @@
         <com.google.android.material.navigation.NavigationView
             android:layout_width="280dp"
             android:layout_height="match_parent"
-            android:background="@color/menu_nav_bg"
             app:menu="@menu/nav_menu"
             android:id="@+id/navMenu"
+            app:itemTextAppearance="?android:attr/textColorPrimary"
             app:itemIconSize="24dp"
-            app:itemTextColor="@color/black"
             android:layout_gravity="start" />
     </androidx.drawerlayout.widget.DrawerLayout>
 
