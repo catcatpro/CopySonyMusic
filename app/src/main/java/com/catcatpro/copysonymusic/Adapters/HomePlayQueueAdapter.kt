@@ -34,7 +34,7 @@ class HomePlayQueueAdapter (private val data: Array<Music>): RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.title.text = data[position].title
-        holder.music_img.setImageResource(data[position].albumImage)
+        holder.music_img.setImageResource(data[position].musicImage)
         holder.artist.text = data[position].artist
 
     }
