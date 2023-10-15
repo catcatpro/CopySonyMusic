@@ -58,8 +58,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="206dp"
-
+                android:layout_marginTop="211dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:id="@+id/play_queue_area"
@@ -78,23 +77,23 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:layout_marginLeft="14dp"
+                            android:layout_marginLeft="10.67dp"
                             android:layout_weight="1"
                             android:text="@string/play_queue"
                             android:textColor="@color/white"
-                            android:textFontWeight="@integer/material_motion_duration_medium_2"
-                            android:textSize="20sp"
+                            android:textFontWeight="400"
+                            android:textSize="21.33sp"
                             android:textStyle="bold" />
 
                         <Button
                             android:id="@+id/openBtn"
-                            android:layout_width="60dp"
-                            android:layout_height="28dp"
-                            android:layout_marginEnd="14dp"
+                            android:layout_width="61.2dp"
+                            android:layout_height="28.56dp"
+                            android:layout_marginEnd="10.67dp"
                             android:background="@drawable/button_bg"
                             android:text="@string/open"
                             android:textColor="@color/white"
-                            android:textSize="14sp" />
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
@@ -102,8 +101,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/container"
-                        android:layout_marginLeft="1dp"
-                        android:layout_marginTop="18dp">
+                        android:layout_marginLeft="1.33dp"
+                        android:layout_marginTop="15.67dp">
 
                         <include
                             android:id="@+id/home_play_queue"
@@ -117,7 +116,7 @@
                     android:id="@+id/recently_played_music_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="26.67dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -130,11 +129,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:layout_marginLeft="14dp"
+                            android:layout_marginLeft="10.67dp"
                             android:layout_weight="1"
                             android:text="@string/recently_played_music"
-                            android:textFontWeight="@integer/material_motion_duration_medium_2"
-                            android:textSize="20sp"
+                            android:textFontWeight="400"
+                            android:textSize="21.33sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>

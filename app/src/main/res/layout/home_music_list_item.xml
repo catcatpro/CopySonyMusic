@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="112dp"
+    android:layout_width="110.95dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:elevation="@dimen/cardview_compat_inset_shadow"
@@ -9,19 +9,19 @@
     <ImageView
         android:id="@+id/musicImg"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="110.95dp"
       />
     <LinearLayout
-        android:paddingRight="7dp"
-        android:paddingLeft="7dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="6.64dp"
+        android:paddingRight="6.67dp"
+        android:paddingLeft="6.67dp"
+        android:paddingTop="5.37dp"
+        android:paddingBottom="10.22dp"
         android:orientation="vertical"
         android:background="?android:colorBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:textSize="13sp"
+            android:textSize="13.33sp"
             android:id="@+id/music_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,9 +30,9 @@
             android:textStyle="bold"
             />
         <TextView
-            android:textSize="11sp"
+            android:textSize="10.67sp"
             android:id="@+id/artist"
-            android:layout_marginTop="3.13dp"
+            android:layout_marginTop="2.67dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end" />
